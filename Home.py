@@ -1,10 +1,12 @@
 import streamlit as st
 
+# Page Configuration
 st.set_page_config(
     page_title="Home Sweet Home",
     page_icon="🏠",
 )
 
+# Side Bar -- Developer's Details
 st.sidebar.header("Developer:")
 name = "Ranjan Das"
 email = "ranjan221523@gmail.com"
@@ -22,13 +24,20 @@ st.title("Welcome to Home Sweet Home")
 # Main header
 st.header("Your Ultimate Real Estate Companion")
 
-# Introduction paragraph
+# Introduction 
 st.write("""
 At Home Sweet Home, we’re here to make your real estate journey smooth, informed, and delightful. Whether you're buying, selling, or simply exploring, our platform offers the insights you need, tailored just for you.
 """)
 
+# Navigation Section Title
+st.subheader("Navigation")
+
+# Price Predictor Section
+# st.header("Price Predictor")
+# st.write("")
+
 # What We Offer section
-st.subheader("What We Offer")
+# st.subheader("What We Offer")
 
 st.write("**Personalized Price Predictions**")
 st.write("""
