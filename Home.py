@@ -1,10 +1,29 @@
 import streamlit as st
+import pages
+import pages.Price_Predictor
+import pages.Analysis
+import pages.Recommend_Appertments
+
 
 # Page Configuration
 st.set_page_config(
     page_title="Home Sweet Home",
     page_icon="🏠",
 )
+st.sidebar.title("Navigation")
+
+# Create a sidebar navigation
+page = st.sidebar.selectbox("Go to", ["Price Predictor", "Analysis Page", "Apartment Recommendation"])
+
+# Render the selected page
+if page == "Price Predictor":
+    pages.Price_Predictor.show()
+elif page == "Analysis Page":
+    pages.Analysis.show()
+elif page == "Apartment Recommendation":
+    pages.Recommend_Appertments.show()
+
+
 
 # Side Bar -- Developer's Details
 st.sidebar.header("Developer:")
