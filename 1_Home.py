@@ -6,19 +6,6 @@ st.set_page_config(
     page_icon="🏠",
 )
 
-
-# Side Bar -- Developer's Details
-st.sidebar.header("Developer:")
-name = "Ranjan Das"
-email = "ranjan221523@gmail.com"
-linkedin = "https://www.linkedin.com/in/ranjan-das-62a331290/"
-
-st.sidebar.write(f"**Name:** {name}.")
-st.sidebar.write(f"**Email:** {email}")
-st.sidebar.write(f"**LinkedIn:** [{name}]({linkedin})")
-
-
-
 # Title of the page
 st.title("Welcome to Home Sweet Home")
 
@@ -32,13 +19,6 @@ At Home Sweet Home, we’re here to make your real estate journey smooth, inform
 
 # Navigation Section Title
 st.subheader("Navigation")
-
-# Price Predictor Section
-# st.header("Price Predictor")
-# st.write("")
-
-# What We Offer section
-# st.subheader("What We Offer")
 
 st.write("**Personalized Price Predictions**")
 st.write("""
@@ -101,7 +81,15 @@ with st.form(key='query_form'):
             st.error("Please enter both your name and your query.")
 
 
+# Side Bar -- Developer's Details
+st.sidebar.header("Developer:")
+name = "Ranjan Das"
+email = "ranjan221523@gmail.com"
+linkedin = "https://www.linkedin.com/in/ranjan-das-62a331290/"
 
+st.sidebar.write(f"**Name:** {name}.")
+st.sidebar.write(f"**Email:** {email}")
+st.sidebar.write(f"**LinkedIn:** [{name}]({linkedin})")
 
 # Footer Section
 st.markdown("---")  # A horizontal line to separate the footer
