@@ -6,6 +6,16 @@ st.set_page_config(
     page_icon="🏠",
 )
 
+# Side Bar -- Developer's Details
+st.sidebar.header("Developer:")
+name = "Ranjan Das"
+email = "ranjan221523@gmail.com"
+linkedin = "https://www.linkedin.com/in/ranjan-das-62a331290/"
+
+st.sidebar.write(f"**Name:** {name}.")
+st.sidebar.write(f"**Email:** {email}")
+st.sidebar.write(f"**LinkedIn:** [{name}]({linkedin})")
+
 # Title of the page
 st.title("Welcome to Home Sweet Home")
 
@@ -80,16 +90,6 @@ with st.form(key='query_form'):
         else:
             st.error("Please enter both your name and your query.")
 
-
-# Side Bar -- Developer's Details
-st.sidebar.header("Developer:")
-name = "Ranjan Das"
-email = "ranjan221523@gmail.com"
-linkedin = "https://www.linkedin.com/in/ranjan-das-62a331290/"
-
-st.sidebar.write(f"**Name:** {name}.")
-st.sidebar.write(f"**Email:** {email}")
-st.sidebar.write(f"**LinkedIn:** [{name}]({linkedin})")
 
 # Footer Section
 st.markdown("---")  # A horizontal line to separate the footer
