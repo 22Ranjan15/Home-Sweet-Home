@@ -98,4 +98,4 @@ This project is licensed under the MIT License.
 For any inquiries, feel free to reach out:
 
 - **GitHub**: [22Ranjan15](https://github.com/22Ranjan15)
-- **Email**: [Mail Here](msd23012@iiitl.ac.in)
+- **Email**: [msd23012@iiitl.ac.in](msd23012@iiitl.ac.in)
